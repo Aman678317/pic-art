@@ -4,7 +4,20 @@ This is a barebones prototype built for the Product Management Internship Assign
 
 ## 11 Color Categories Supported
 The colors in the image are mapped to one of the following 11 categories using perceptual color distance (CIELAB color space):
-- White, Black, Red, Green, Yellow, Blue, Brown, Purple, Pink, Orange, Gray.
+
+| Category | Hex Color |
+| -------- | --------- |
+| White    | `#FFFFFF` |
+| Black    | `#000000` |
+| Red      | `#FF0000` |
+| Green    | `#00A651` |
+| Yellow   | `#FFD700` |
+| Blue     | `#0066FF` |
+| Brown    | `#8B4513` |
+| Purple   | `#800080` |
+| Pink     | `#FF69B4` |
+| Orange   | `#FF8C00` |
+| Gray     | `#808080` |
 
 ## Setup Instructions
 To run this prototype locally, you will need Python installed on your machine.

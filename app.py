@@ -5,19 +5,19 @@ import matplotlib.pyplot as plt
 from skimage.color import rgb2lab
 import io
 
-# The 11 base color categories mapped to typical RGB representations.
+# The 11 base color categories mapped to specific Hex to RGB representations.
 COLOR_MAP = {
-    'White': (255, 255, 255),
-    'Black': (0, 0, 0),
-    'Red': (255, 0, 0),
-    'Green': (0, 128, 0),
-    'Yellow': (255, 255, 0),
-    'Blue': (0, 0, 255),
-    'Brown': (165, 42, 42),
-    'Purple': (128, 0, 128),
-    'Pink': (255, 192, 203),
-    'Orange': (255, 165, 0),
-    'Gray': (128, 128, 128)
+    'White': (255, 255, 255),    # #FFFFFF
+    'Black': (0, 0, 0),          # #000000
+    'Red': (255, 0, 0),          # #FF0000
+    'Green': (0, 166, 81),       # #00A651
+    'Yellow': (255, 215, 0),     # #FFD700
+    'Blue': (0, 102, 255),       # #0066FF
+    'Brown': (139, 69, 19),      # #8B4513
+    'Purple': (128, 0, 128),     # #800080
+    'Pink': (255, 105, 180),     # #FF69B4
+    'Orange': (255, 140, 0),     # #FF8C00
+    'Gray': (128, 128, 128)      # #808080
 }
 
 @st.cache_data
@@ -77,7 +77,7 @@ if uploaded_file is not None:
     with col1:
         st.subheader("Original Image")
         # Support for new streamlit version api
-        st.image(image, use_container_width=True)
+        st.image(image, width='stretch')
         
     with col2:
         st.subheader("Color Percentage Breakdown")
